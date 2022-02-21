@@ -63,6 +63,7 @@ public:
                     }
                 line = line.substr(pos + 1, line.length());
             }
+            G.init_tmp_degree(cnt);
         }
     }
 };

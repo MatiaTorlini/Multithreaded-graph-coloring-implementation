@@ -24,6 +24,10 @@ public:
         size = s;
     }
 
+    size_t get_size() const {
+        return size;
+    }
+
     void add_vertex(std::shared_ptr<Vertex> v) {
         vertices.push_back(v);
     }
@@ -38,6 +42,32 @@ public:
             v->print_vertex_adjs();
         }
     }
+
+    void init_tmp_degree(long int id) {
+        vertices[id]->init_tmp_degree();
+    }
+
+    bool try_to_weight(long int id, int degree, int weight){
+        if(vertices[id]->compare_degrees(degree))
+        {
+            vertices[id]->set_weight(weight);
+            return true;
+        }
+        return false;
+    }
+
+    void remove(long int id) {
+        vertices[id]->self_remove();
+    }
+
+    /*
+    int sdl_assign_color(long int id) {
+        long int conflict = vertices[id]->conflict();
+        if (conflict)
+            vertices[conflict]->assign_color();
+        vertices[id]->assign_color();
+    }
+    */
 
 };
 
