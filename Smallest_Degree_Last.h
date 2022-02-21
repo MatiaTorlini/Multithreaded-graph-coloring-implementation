@@ -72,6 +72,11 @@ public:
         return 0;
     }
 
+    bool is_last_thread()
+    {
+        return waiting_threads.fetch_sub(1) == 1;
+    }
+
     void thread_task(int thread_id)
     {
         while(unassigned_vertices > 0)
@@ -122,11 +127,6 @@ public:
                 fragments_to_weight[thread_id].erase(itr--);
             }
         }
-    }
-
-    bool is_last_thread()
-    {
-        return waiting_threads.fetch_sub(1) == 1;
     }
 
     void thread_remove(int thread_id)
