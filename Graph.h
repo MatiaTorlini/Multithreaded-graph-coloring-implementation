@@ -28,7 +28,7 @@ public:
         return size;
     }
 
-    void add_vertex(std::shared_ptr<Vertex> v) {
+    void add_vertex(const std::shared_ptr<Vertex>& v) {
         vertices.push_back(v);
     }
 
@@ -39,7 +39,7 @@ public:
     void print_graph() {
         for (auto v : vertices) {
             v->print_vertex();
-            v->print_vertex_adjs();
+            //v->print_vertex_adjs();
         }
     }
 
@@ -58,6 +58,19 @@ public:
 
     void remove(long int id) {
         vertices[id]->self_remove();
+    }
+
+    void check_weights(){
+        if(
+            vertices[5]->get_weight() == 0 and
+            vertices[3]->get_weight() == 1 and
+            vertices[2]->get_weight() == 1 and
+            vertices[0]->get_weight() == 1 and
+            vertices[4]->get_weight() == 2 and
+            vertices[1]->get_weight() == 2)
+            std::cout<<"(OK)\n";
+        else std::cout<<"weights are wrong.\n";
+
     }
 
     /*

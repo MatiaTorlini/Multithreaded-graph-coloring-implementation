@@ -16,7 +16,7 @@ class Vertex : public std::enable_shared_from_this<Vertex> {
     std::atomic<int> i;
     std::shared_mutex m;
     int weight;
-    int tmp_degree;
+    std::atomic<int> tmp_degree;
     long random;
     std::list<std::shared_ptr<Vertex>> neighbors;
 
@@ -27,17 +27,17 @@ public:
         return shared_from_this();
     }
 
-    void add_neighbor(std::shared_ptr<Vertex> neigh) {
+    void add_neighbor(const std::shared_ptr<Vertex>& neigh) {
         neighbors.push_back(neigh);
     }
 
-    void print_vertex() {
+    void print_vertex() const {
         std::cout<<"[id : "<<id<<"][weight : "<<weight<<"][degree : "<<tmp_degree<<"]\n";
     }
 
     void print_vertex_adjs() {
         std::cout<<"{";
-        for (auto v : neighbors)
+        for (const auto& v : neighbors)
             std::cout<<v->id<<" ";
         std::cout<<"}\n";
     }
@@ -46,8 +46,12 @@ public:
         tmp_degree = neighbors.size();
     }
 
-    int get_color(){
+    int get_color() const{
         return color;
+    };
+
+    int get_weight() const{
+        return weight;
     };
 
     bool compare_degrees(int degree)
@@ -58,7 +62,6 @@ public:
 
     void decrease_tmp_degree()
     {
-        std::scoped_lock<std::shared_mutex> lock(m);
         --tmp_degree;
     }
 
@@ -71,6 +74,7 @@ public:
     {
         for (auto &n : neighbors)
         {
+            std::scoped_lock<std::shared_mutex> lock(m);
             n->decrease_tmp_degree();
         }
     }
