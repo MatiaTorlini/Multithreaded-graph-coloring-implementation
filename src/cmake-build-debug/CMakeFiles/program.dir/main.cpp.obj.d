@@ -1,5 +1,5 @@
 CMakeFiles/program.dir/main.cpp.obj: \
- C:\Users\rares\Desktop\Multithreading\ Graph\ Coloring\src\main.cpp \
+ C:\Users\rares\Desktop\Multithreaded-graph-coloring-implementation\src\main.cpp \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -147,7 +147,7 @@ CMakeFiles/program.dir/main.cpp.obj: \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
- C:\Users\rares\Desktop\Multithreading\ Graph\ Coloring\src\Loader.h \
+ C:\Users\rares\Desktop\Multithreaded-graph-coloring-implementation\src\Loader.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
@@ -182,8 +182,8 @@ CMakeFiles/program.dir/main.cpp.obj: \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/mutex \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unique_lock.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_function.h \
- C:\Users\rares\Desktop\Multithreading\ Graph\ Coloring\src\Graph.h \
- C:\Users\rares\Desktop\Multithreading\ Graph\ Coloring\src\Vertex.h \
+ C:\Users\rares\Desktop\Multithreaded-graph-coloring-implementation\src\Graph.h \
+ C:\Users\rares\Desktop\Multithreaded-graph-coloring-implementation\src\Vertex.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_uninitialized.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_raw_storage_iter.h \
@@ -217,16 +217,16 @@ CMakeFiles/program.dir/main.cpp.obj: \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_vector.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_bvector.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc \
- C:\Users\rares\Desktop\Multithreading\ Graph\ Coloring\src\Config.h \
- C:\Users\rares\Desktop\Multithreading\ Graph\ Coloring\src\Time_logger.h \
- C:\Users\rares\Desktop\Multithreading\ Graph\ Coloring\src\Jones-Plassman.h \
+ C:\Users\rares\Desktop\Multithreaded-graph-coloring-implementation\src\Config.h \
+ C:\Users\rares\Desktop\Multithreaded-graph-coloring-implementation\src\Time_logger.h \
+ C:\Users\rares\Desktop\Multithreaded-graph-coloring-implementation\src\Jones_Plassman.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/barrier \
- C:\Users\rares\Desktop\Multithreading\ Graph\ Coloring\src\Smart_index.h \
- C:\Users\rares\Desktop\Multithreading\ Graph\ Coloring\src\Smallest_Degree_Last.h \
+ C:\Users\rares\Desktop\Multithreaded-graph-coloring-implementation\src\Smart_index.h \
+ C:\Users\rares\Desktop\Multithreaded-graph-coloring-implementation\src\Smallest_Degree_Last.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/condition_variable \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cassert \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/assert.h \
- C:\Users\rares\Desktop\Multithreading\ Graph\ Coloring\src\Random_assigner.h \
+ C:\Users\rares\Desktop\Multithreaded-graph-coloring-implementation\src\Random_assigner.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/random \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/x86_64-w64-mingw32/include/math.h \
@@ -249,7 +249,7 @@ CMakeFiles/program.dir/main.cpp.obj: \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/numeric \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_numeric.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_numeric_defs.h \
- C:\Users\rares\Desktop\Multithreading\ Graph\ Coloring\src\Sequential_greedy_coloring.h \
+ C:\Users\rares\Desktop\Multithreaded-graph-coloring-implementation\src\Sequential_greedy_coloring.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/algorithm \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ranges_algo.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ranges_util.h \

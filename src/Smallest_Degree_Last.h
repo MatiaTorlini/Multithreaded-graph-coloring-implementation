@@ -42,12 +42,28 @@ private:
         return std::make_pair(start,stop);
     }
 
+    void thread_weight(long& unweighted, Smart_index &idx, std::list<long>& _to_remove)
+    {
+        long j;
+        for (long k=0;k<unweighted;k++) {
+            j = idx.get_idx();
+            if (graph.try_to_weight(j, current_degree.load(), current_weight.load())) {
+                processed_flag.store(true);
+                _to_remove.push_back(j);
+                unweighted--;
+                idx.update(true);
+            } else
+                idx.update(false);
+        }
+    }
+
 public:
     Smallest_Degree_Last(Graph& _graph, int _n_threads) : graph(_graph), n_threads(_n_threads)
     {
         init();
     };
 
+    ///Initializes the main variables used by the weighting algorithm.
     void init()
     {
         to_remove.resize(n_threads);
@@ -56,6 +72,7 @@ public:
         current_degree.store(0);
     }
 
+    ///Starts the weighting algorithm and assigns weights to all vertices in the graph.
     int start() {
 
         cout<<"Weighting...\n";
@@ -106,21 +123,6 @@ public:
         std::cout<<"-----------------------------------------------------------------------------"<<"\n";
 
         return 0;
-    }
-
-    void thread_weight(long& unweighted, Smart_index &idx, std::list<long>& _to_remove)
-    {
-        long j;
-        for (long k=0;k<unweighted;k++) {
-            j = idx.get_idx();
-            if (graph.try_to_weight(j, current_degree.load(), current_weight.load())) {
-                processed_flag.store(true);
-                _to_remove.push_back(j);
-                unweighted--;
-                idx.update(true);
-            } else
-                idx.update(false);
-        }
     }
 };
 

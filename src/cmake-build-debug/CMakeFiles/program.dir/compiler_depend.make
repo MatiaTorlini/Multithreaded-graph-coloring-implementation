@@ -221,10 +221,10 @@ CMakeFiles/program.dir/main.cpp.obj: ../main.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc \
   ../Config.h \
   ../Time_logger.h \
-  ../Jones-Plassman.h \
+  ../Jones_Plassman.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/barrier \
   ../Smart_index.h \
-  ../sdl_weighting.h \
+  ../Smallest_Degree_Last.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/condition_variable \
   C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cassert \
   C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/x86_64-w64-mingw32/include/assert.h \
@@ -698,6 +698,8 @@ C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/x86_64-w64-mingw32/include/semaphore.h:
 
+../Jones_Plassman.h:
+
 C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_function.h:
 
 ../Graph.h:
@@ -746,15 +748,13 @@ C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 ../Time_logger.h:
 
-../Jones-Plassman.h:
-
 C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/barrier:
 
 ../Smart_index.h:
 
-../Random_assigner.h:
+C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/specfun.h:
 
-../sdl_weighting.h:
+../Smallest_Degree_Last.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/condition_variable:
 
@@ -762,9 +762,9 @@ C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/x86_64-w64-mingw32/include/assert.h:
 
-C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/x86_64-w64-mingw32/include/math.h:
+../Random_assigner.h:
 
-C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/specfun.h:
+C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/x86_64-w64-mingw32/include/math.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2021.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/bessel_function.tcc:
 

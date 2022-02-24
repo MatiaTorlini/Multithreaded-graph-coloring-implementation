@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/rares/Desktop/Multithreading Graph Coloring/src/main.cpp" "CMakeFiles/program.dir/main.cpp.obj" "gcc" "CMakeFiles/program.dir/main.cpp.obj.d"
+  "C:/Users/rares/Desktop/Multithreaded-graph-coloring-implementation/src/main.cpp" "CMakeFiles/program.dir/main.cpp.obj" "gcc" "CMakeFiles/program.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.
