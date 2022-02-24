@@ -1,0 +1,3 @@
+C:/Users/rares/Desktop/Multithreading Graph Coloring/src/cmake-build-debug/CMakeFiles/program.dir
+C:/Users/rares/Desktop/Multithreading Graph Coloring/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/rares/Desktop/Multithreading Graph Coloring/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
