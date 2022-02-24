@@ -17,16 +17,12 @@ Launch the following commands in the root folder
 mkdir build && cd build/
 ```
 
-### Compile
+### Compile and create .exe
 
 ```bash
 cmake ../src
-```
-
-### Create .exe
-
-```bash
 cmake --build . --config Release 
+
 ```
 
 ### Run
