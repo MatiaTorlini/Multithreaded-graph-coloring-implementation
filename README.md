@@ -37,5 +37,5 @@ cmake --build . --config Release
 ./Release/program.exe
 ```
 
-##Input file
+### Input file
 .graph files are in the ./test folder. To launch the program on rgg_n_2_15_s0.graph, the filename has to be ../../test/rgg_n_2_15_s0.graph
