@@ -3,9 +3,11 @@
 
 [![GitHub Build Status](https://github.com/team-diana/DIANA-TemplateCPP/workflows/C/C++%20CI/badge.svg)](https://github.com/team-diana/DIANA-TemplateCPP/actions)
 
-This has been developed on CLion IDE.
-It is possible to generate the .exe on Windows 
-through the following CMake commands
+Use this template for new repositories.
+
+This program is meant to be used in CLion IDE.
+However, it is possible to generate the .exe on Windows 
+through CMake
 
 ## Usage from cmd
 
@@ -17,16 +19,20 @@ Launch the following commands in the root folder
 mkdir build && cd build/
 ```
 
-### Compile and create .exe
+### Compile
 
 ```bash
-cmake ../src
-cmake --build . --config Release 
+cmake ..
+```
 
+### Create .exe
+
+```bash
+cmake --build . --config Release
 ```
 
 ### Run
 
 ```bash
-./Release/program.exe
+./Release/${name}.exe
 ```
