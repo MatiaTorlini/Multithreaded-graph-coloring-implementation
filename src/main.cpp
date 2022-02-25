@@ -14,7 +14,8 @@ void print_menu() {
     std::cout<<"-----------------------------------------------------------------------------"<<"\n";
     std::cout<<"Synopsis"
                "[input_graph] [algorithm] [number_of_threads]\n\n";
-    std::cout<<"  [input_graph] : filename (nb graph file must be in ./test folder);\n"
+    std::cout<<"  [input_graph] : filename (nb graph file must be in ./test folder; however, it\n"
+                                  "is possible to change the inputs and outputs folder in Config.h);\n"
                "  [algorithm]:\n"
                "       0 for sequential greedy;\n"
                "       1 for Random heuristic ordering Jones-Plassman;\n"
