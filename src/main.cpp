@@ -18,8 +18,9 @@ void print_menu() {
                                   "is possible to change the inputs and outputs folder in Config.h);\n"
                "  [algorithm]:\n"
                "       0 for sequential greedy;\n"
-               "       1 for Random heuristic ordering Jones-Plassman;\n"
-               "       2 for Smalles-degree-last heuristic ordering Jones-Plassman;\n"
+               "       1 for Random ordering heuristic Jones-Plassman;\n"
+               "       2 for Smallest-degree-last ordering heuristic Jones-Plassman;\n"
+               "       3 for Largest-degree-first ordering heuristic Jones-Plassman;\n"
                "  [number_of_threads]: an integer number\n"
                "  (required with algorithms 1 and 2 only)\n";
 
@@ -88,9 +89,9 @@ int main() {
         if(res) {
             G.print_n_colors();
             G.print_vertices_to_file(output_file);
-            std::cout<<"You want to check the coloring? (Y/N)\n";
+            std::cout<<"Do you want to check the coloring? (Y/N)\n";
             std::cin >> input_file;
-            if (input_file == "Y")
+            if (input_file == "Y" or input_file == "y" )
                 G.check_coloring();
             std::cout<<"You can find the colors assigned in the output folder\n";
         }

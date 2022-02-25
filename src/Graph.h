@@ -57,6 +57,11 @@ public:
         return vertices[id]->has_biggest_random();
     }
 
+    ///Returns true if the vertex has the biggest degree in its adjacency list.
+    bool has_biggest_degree(long id) {
+        return vertices[id]->has_biggest_degree();
+    }
+
     ///Returns true if the vertex has weight > all the weights of its neighborhood
     /// (conflicts resolved by random numbers).
     bool has_biggest_weight(long id) {
@@ -119,7 +124,7 @@ public:
         vertices[id]->init_degree();
     }
 
-    ///Returns true if the degree of the vertex identified by id is <= the parameter d,
+    ///Returns true if the degree of the vertex identified by id is lower or equal the parameter d,
     /// and assigns the weight w in this case
     bool try_to_weight(long int id, int d, int w){
         if(vertices[id]->compare_degrees(d))

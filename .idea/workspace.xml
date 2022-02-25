@@ -13,6 +13,14 @@
   <component name="ChangeListManager">
     <list default="true" id="53e90094-1b3c-427c-adc5-1f2ee7ec7092" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Jones_Plassman.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Jones_Plassman.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vertex.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vertex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/program.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/program.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +80,7 @@
       <workItem from="1645734013524" duration="35000" />
       <workItem from="1645734274936" duration="9000" />
       <workItem from="1645740665566" duration="1522000" />
-      <workItem from="1645796707209" duration="1000" />
+      <workItem from="1645796707209" duration="3559000" />
     </task>
     <task id="LOCAL-00001" summary="Documentation">
       <created>1645741700015</created>
@@ -81,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645741700015</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Documentation">
+      <created>1645796958228</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645796958228</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

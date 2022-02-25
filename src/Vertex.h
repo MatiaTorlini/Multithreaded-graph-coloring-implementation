@@ -164,13 +164,26 @@ public:
         }
     }
 
-    ///Returns true if the vertex has weight > all the weights of its neighborhood (conflicts resolved by random numbers).
+    ///Returns true if the vertex has the biggest weight of all the weights of its neighborhood (conflicts resolved by random numbers).
     bool has_biggest_weight() {
         for (auto& n : neighbors_updated_jp) {
             if (n->weight > this->weight) {
                 return false;
             }
             if (n->weight == this->weight)
+                if (n->random > this->random)
+                    return false;
+        }
+        return true;
+    }
+
+    ///Returns true if the vertex has the biggest degree of all the degrees of its neighborhood (conflicts resolved by random numbers).
+    bool has_biggest_degree() {
+        for (auto& n : neighbors_updated_jp) {
+            if (n->degree > this->degree) {
+                return false;
+            }
+            if (n->degree == this->degree)
                 if (n->random > this->random)
                     return false;
         }

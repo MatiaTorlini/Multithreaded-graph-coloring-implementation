@@ -104,6 +104,16 @@ public:
                             else
                                 idx.update(false);
                         }
+                        else if (mode == 3) {
+                            if (graph.has_biggest_degree(j)) {
+                                graph.color(j);
+                                to_remove[i].push_back(j);
+                                uncolored--;
+                                idx.update(true);
+                            }
+                            else
+                                idx.update(false);
+                        }
                     }
                     sync_point1.arrive_and_wait();
                 }
