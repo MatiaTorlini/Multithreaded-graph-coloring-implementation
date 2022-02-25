@@ -130,7 +130,7 @@ public:
         return weight;
     };
 
-    ///Locks a shared mutex, and returns true if the degree of this vertex is <= the parameter d.
+    ///Locks a shared mutex, and returns true if the degree of this vertex is lower or equal the parameter d.
     bool compare_degrees(int d)
     {
         std::shared_lock<std::shared_mutex> lock(m);
@@ -149,7 +149,8 @@ public:
         weight = w;
     }
 
-    ///Deletes the neighbor pointed by neigh from the adjacency list dedicated to the weighting algorithm.
+    ///Deletes the neighbor pointed by neigh from the adjacency list.
+    ///(NOTE: the adjacency lists used is dedicated to the weighting algorithm)
     void delete_neighbor_sdl(Vertex* neigh){
         neighbors_updated_sdl.remove(neigh);
         decrease_degree();

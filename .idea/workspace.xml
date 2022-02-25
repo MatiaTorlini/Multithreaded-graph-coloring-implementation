@@ -13,36 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="53e90094-1b3c-427c-adc5-1f2ee7ec7092" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vertex.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vertex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/.cmake/api/v1/reply/cache-v2-fc217325332037d07f23.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-0fa4b10e1a97dccf19e5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-9fe8c3d65299e326490b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/.cmake/api/v1/reply/index-2022-02-24T19-54-00-0079.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/.cmake/api/v1/reply/target-program-Debug-bc9f86a16f5dbe8390a8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/compiler_depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/main.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/main.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/CMakeFiles/program.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/program.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/program.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake-build-debug/program.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake-build-debug/program.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,11 +71,24 @@
       <workItem from="1645731852172" duration="1212000" />
       <workItem from="1645734013524" duration="35000" />
       <workItem from="1645734274936" duration="9000" />
-      <workItem from="1645740665566" duration="728000" />
+      <workItem from="1645740665566" duration="1522000" />
+      <workItem from="1645796707209" duration="1000" />
     </task>
+    <task id="LOCAL-00001" summary="Documentation">
+      <created>1645741700015</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1645741700015</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Documentation" />
   </component>
 </project>
