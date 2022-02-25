@@ -101,4 +101,12 @@
     <MESSAGE value="Documentation" />
     <option name="LAST_COMMIT_MESSAGE" value="Documentation" />
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="this" />
+        <watch expression="this" />
+      </configuration>
+    </watches-manager>
+  </component>
 </project>

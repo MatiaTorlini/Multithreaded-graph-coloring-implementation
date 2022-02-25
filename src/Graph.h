@@ -141,6 +141,7 @@ public:
     ///Removes the vertex identified by id from the adjacency lists of its neighbors.
     ///(NOTE: the adjacency lists used is dedicated to the weighting algorithm)
     void remove_sdl(long int id) {
+        std::scoped_lock<std::mutex> lock(m);
         vertices[id]->remove_sdl();
     }
 

@@ -152,8 +152,11 @@ public:
     ///Deletes the neighbor pointed by neigh from the adjacency list.
     ///(NOTE: the adjacency lists used is dedicated to the weighting algorithm)
     void delete_neighbor_sdl(Vertex* neigh){
-        neighbors_updated_sdl.remove(neigh);
-        decrease_degree();
+        std::scoped_lock<std::shared_mutex> lock(m);
+        if(neigh != nullptr){
+            // neighbors_updated_sdl.remove(neigh); //Better performances and stability without this line
+            decrease_degree();
+        }
     }
 
     ///Removes this vertex from the adjacency lists of its neighbors.
