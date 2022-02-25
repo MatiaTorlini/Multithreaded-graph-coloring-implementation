@@ -1,8 +1,6 @@
 # Multithreaded-graph-coloring-implementation
 
 
-[![GitHub Build Status](https://github.com/team-diana/DIANA-TemplateCPP/workflows/C/C++%20CI/badge.svg)](https://github.com/team-diana/DIANA-TemplateCPP/actions)
-
 This software has been developed on CLion IDE.
 It is possible to generate the .exe on Windows 
 through the following CMake commands
