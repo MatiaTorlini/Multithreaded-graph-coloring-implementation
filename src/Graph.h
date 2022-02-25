@@ -19,7 +19,7 @@ class Graph{
 public:
     Graph(){};
 
-    /// ???
+    /// Returns a vector of pointers to Vertices for being shuffled in the sequential greedy algorithm
     std::vector<Vertex*> vector_to_shuffle(){
         std::vector<Vertex*> V;
         for (const auto& v:vertices)
