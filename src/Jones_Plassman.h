@@ -6,10 +6,10 @@
 #define PROGRAM_JONES_PLASSMAN_H
 
 #include <barrier>
+#include <functional>
 #include "Smart_index.h"
 #include "Smallest_Degree_Last.h"
 #include "Random_assigner.h"
-
 
 class Jones_Plassman {
 private:
@@ -30,11 +30,7 @@ private:
         _indexes[n - 1].second = size;
     }
 
-public:
-    Jones_Plassman(Graph& g): graph(g){};
-
-    void start(int n, int md) {
-
+    void init(int n, int md){
         //INIT VARIABLES
         n_threads = n;
         mode = md;
@@ -43,6 +39,41 @@ public:
 
         //PARTITION GRAPH
         split_indexes(graph.get_size(), indexes, n_threads); //define data chunks for each thread
+
+    }
+
+public:
+    Jones_Plassman(Graph& g): graph(g){
+    };
+
+    void start(int n, int md) {
+
+        init(n, md);
+
+        std::function<bool(long)> heuristic;
+
+        switch(mode){
+            case 1:
+                heuristic = [this](long id) noexcept {
+                    return graph.has_biggest_random(id);
+                };
+                break;
+            case 2:
+                heuristic = [this](long id) noexcept {
+                    return graph.has_biggest_weight(id);
+                };
+                break;
+            case 3:
+                heuristic = [this](long id) noexcept {
+                    return graph.has_biggest_degree(id);
+                };
+                break;
+            default:
+                heuristic = [this](long id) noexcept {
+                    return graph.has_biggest_random(id);
+                };
+                break;
+        }
 
         //DEFINE FUNCTION TO BE PERFORMED WHEN A CYCLE IS COMPLETED
         auto update_graph = [this]() noexcept {
@@ -57,8 +88,6 @@ public:
         std::barrier sync_point1(n_threads, update_graph);
         std::barrier sync_point0(n_threads);
 
-
-
         if (mode==2) {
             Smallest_Degree_Last SDL(graph, n_threads);
             SDL.start();
@@ -66,7 +95,7 @@ public:
 
         //LAUNCH THREADS
         for (int i=0;i<n_threads;i++)
-            threads.emplace_back(std::thread([this, i, &sync_point1, &sync_point0](){
+            threads.emplace_back(std::thread([this, i, &sync_point1, &sync_point0, &heuristic](){
 
                 long start = indexes[i].first;
                 long stop = indexes[i].second;
@@ -84,36 +113,14 @@ public:
                 while(uncolored) {
                     for (long k=0;k<uncolored;k++) {
                         j = idx.get_idx();
-                        if (mode == 1) {
-                            if (graph.has_biggest_random(j)) {
+                            if (heuristic(j))
+                            {
                                 graph.color(j);
                                 to_remove[i].push_back(j);
                                 uncolored--;
                                 idx.update(true);
                             }
-                            else
-                                idx.update(false);
-                        }
-                        else if (mode == 2){
-                            if (graph.has_biggest_weight(j)) {
-                                graph.color(j);
-                                to_remove[i].push_back(j);
-                                uncolored--;
-                                idx.update(true);
-                            }
-                            else
-                                idx.update(false);
-                        }
-                        else if (mode == 3) {
-                            if (graph.has_biggest_degree(j)) {
-                                graph.color(j);
-                                to_remove[i].push_back(j);
-                                uncolored--;
-                                idx.update(true);
-                            }
-                            else
-                                idx.update(false);
-                        }
+                            else idx.update(false);
                     }
                     sync_point1.arrive_and_wait();
                 }
