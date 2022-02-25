@@ -15,6 +15,7 @@ class Graph{
     size_t size;
     std::vector<std::shared_ptr<Vertex>> vertices;
     std::set<int> colors;
+    std::mutex m;
 
 public:
     Graph(){};
@@ -71,7 +72,9 @@ public:
     ///Assigns the minimum available color in the neighborhood to the vertex identified by id and
     /// inserts it in the set of used colors.
     void color(long id) {
-         colors.insert(vertices[id].get()->assign_color());
+        int c = vertices[id].get()->assign_color();
+        std::scoped_lock<std::mutex> lock(m);
+        colors.insert(c);
     }
 
     ///Remove the vertex identified by id from the adjacency lists of its neighbors.
