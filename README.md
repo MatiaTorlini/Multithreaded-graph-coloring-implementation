@@ -1,8 +1,11 @@
 # Multithreaded-graph-coloring-implementation
 
-This program is meant to be used in CLion IDE.
-However, it is possible to generate the .exe on Windows 
-through CMake
+
+[![GitHub Build Status](https://github.com/team-diana/DIANA-TemplateCPP/workflows/C/C++%20CI/badge.svg)](https://github.com/team-diana/DIANA-TemplateCPP/actions)
+
+This software has been developed on CLion IDE.
+It is possible to generate the .exe on Windows 
+through the following CMake commands
 
 ## Usage from cmd
 
@@ -14,20 +17,16 @@ Launch the following commands in the root folder
 mkdir build && cd build/
 ```
 
-### Compile
+### Compile and create .exe
 
 ```bash
-cmake ..
-```
+cmake ../src
+cmake --build . --config Release 
 
-### Create .exe
-
-```bash
-cmake --build . --config Release
 ```
 
 ### Run
 
 ```bash
-./Release/${name}.exe
+./Release/program.exe
 ```
