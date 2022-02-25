@@ -28,7 +28,7 @@ private:
 
     std::vector<std::list<long>> to_remove;
 
-    std::pair<long,long> split_indexes(long int size, int thread_id, int n) {
+    [[nodiscard]] std::pair<long,long> split_indexes(long int size, int thread_id, int n) const {
 
         int gap = size/n;
         long start;
